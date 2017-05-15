@@ -1,0 +1,25 @@
+{
+  "name": "@lvo/logging",
+  "version": "1.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/LVM-IT/lvo/tree/1.0.0/logging"
+  },
+  "author": {
+    "name": "LVM"
+  },
+  "keywords": [
+    "angular"
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/LVM-IT/lvo/issues"
+  },
+  "module": "lvo-logging.js",
+  "typings": "lvo-logging.d.ts",
+  "peerDependencies": {
+    "@angular/core": "^4.0.0",
+    "rxjs": "^5.1.0",
+    "zone.js": "^0.8.4"
+  }
+}
