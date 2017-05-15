@@ -91,21 +91,21 @@ describe('LogManagerService', () => {
 
         // create logger with one context an one colour
         const logger3 = logManager.getLogger('log2', 'blue');
-        logger3.info('#logmanager.getLogger 3', logger3, logger3.getContext());
+        logger3.critical('#logmanager.getLogger 3', logger3, logger3.getContext());
         expect(logger3).toBeTruthy();
 
         // create logger with context and subcontext
         const logger4 = logManager.getLogger(['log1', '123']);
-        logger4.info('#logmanager.getLogger 4', logger4, logger4.getContext());
+        logger4.verbose('#logmanager.getLogger 4', logger4, logger4.getContext());
         expect(logger4).toBeTruthy();
 
         // create logger with context named like the instance object without
         const logger5 = logManager.getLogger(logManager);
-        logger5.info('#logmanager.getLogger 5', logger5, logger5.getContext());
+        logger5.warn('#logmanager.getLogger 5', logger5, logger5.getContext());
         expect(logger5).toBeTruthy();
 
         const logger6 = logManager.getLogger('log6');
-        logger6.info('#logmanager.getLogger 6', logger6, logger6.getContext());
+        logger6.error('#logmanager.getLogger 6', logger6, logger6.getContext());
         expect(logger6).toBeTruthy();
 
     }));
