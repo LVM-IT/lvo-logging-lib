@@ -28,7 +28,6 @@ branches:
 before_script:
 - cd $PACKAGE
 - npm install -g codecov
-- npm install coveralls
 - npm install
 - ng lint
 - npm run build
@@ -36,7 +35,6 @@ before_script:
 
 script:
 - codecov
-- cat ./coverage/lcov.info | ./node_modules/coveralls/bin/coveralls.js
 
 notifications:
   email:
