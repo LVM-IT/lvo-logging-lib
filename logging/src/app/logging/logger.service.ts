@@ -107,7 +107,7 @@ export class Logger {
 
 
     /**
-     * Schreibt einen LogEintrag mit dem entsprechenden Level
+     * writes a Log Entry with logLevel
      * @param message
      * @param logLevel
      */
@@ -122,7 +122,7 @@ export class Logger {
             }
         }
 
-        // return Flag für Testbarkeit
+        // returns flag for testability
         return false;
     }
 
@@ -170,7 +170,7 @@ export class Logger {
 
     private msg(level: LogLevel, ...params: any[]) {
 
-        // Array Hülle für eine schönere Darstellung in der Console entfernen
+        // remove array wrapper for a nicer presentation in the console
         if (Array.isArray(params)) {
             params = params.pop();
             params = params.pop();

@@ -21,8 +21,8 @@
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
-    "flatModuleOutFile": "lvm-logging.js",
-    "flatModuleId": "lvm-logging"
+    "flatModuleOutFile": "lvo-logging.js",
+    "flatModuleId": "@lvo/logging"
   },
   "files": [
     "./index.ts"
