@@ -15,5 +15,8 @@ import { LogviewComponent } from './logview.component';
     ],
     bootstrap: [LogviewComponent]
 })
+/**
+ * View Module for demonstration purposes only
+ */
 export class LogviewAppModule {
 }

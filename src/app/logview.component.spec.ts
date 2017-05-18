@@ -3,7 +3,7 @@
 import { TestBed, async } from '@angular/core/testing';
 import { LogviewComponent } from './logview.component';
 import { environment } from '../environments/environment';
-import { LoggingModule } from './logging/logging.module';
+import { LoggingModule } from './core/logging.module';
 
 describe('AppComponent', () => {
   beforeEach(() => {

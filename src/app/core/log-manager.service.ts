@@ -3,7 +3,11 @@ import { Logger } from './logger.service';
 import { LogLevel } from './log-level.enum';
 
 /**
- * created with 'ng g service LogManager'
+ * LogManager is the Factory for creation Logger for a certain context
+ * usage:
+ *      inject the logManager via constructor
+ *      this.log = logManager.getLogger(this, '#4863A0');
+ *
  */
 @Injectable()
 export class LogManager {
@@ -35,7 +39,7 @@ export class LogManager {
     /**
      * Factory Method, um jeder Klasse die Möglichkeit zu geben, seinen eigenen Logger zu instanziieren
      * @param context - a string or an instance or a context instance
-     * @returns {LogServiceRef}
+     * @returns {Logger}
      */
     public getLogger(context: any, moduleColor?: string): Logger {
         if (context) {
@@ -86,9 +90,14 @@ export class LogManager {
         }
     }
 
+    /**
+     * build linked Maps according to the Context to enable LogLevel Settings and other on context and subcontext level
+     *
+     * @param context
+     * @returns {Map<string, any>}
+     */
     public getLoggerMap(context?: Array<string>): Map<string, any> {
         if (context && context.length > 0) {
-            // build linked Maps according to the Context to enable LogLevel Settings and other on context and subcontext level
             let lastMap = this._loggerMap;
             for (let _i = 0; _i < context.length; _i++) {
                 const key = context[_i];
@@ -125,9 +134,9 @@ export class LogManager {
         }
     }
 
-    private getContext(object: any): Array < string > {
+    private getContext(object: any): Array<string> {
 
-        let context: Array < string > = new Array<string>();
+        let context: Array<string> = new Array<string>();
 
         if (Array.isArray(object)) {
             context = object;

@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
-import { LogManager } from './logging/log-manager.service';
-import { Logger } from './logging/logger.service';
+import { LogManager } from './core/log-manager.service';
+import { Logger } from './core/logger.service';
 
+/**
+ * View Component for Demonstration Purposes
+ */
 @Component({
     selector: 'app-root',
     template: `<h1>

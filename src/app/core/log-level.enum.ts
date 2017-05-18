@@ -1,3 +1,6 @@
+/**
+ * enum of the supported LogLevel
+ */
 export enum LogLevel {
   Nothing,
   Verbose,

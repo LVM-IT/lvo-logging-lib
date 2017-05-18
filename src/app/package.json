@@ -1,9 +1,9 @@
 {
   "name": "@lvo/logging",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LVM-IT/lvo/tree/1.0.0/logging"
+    "url": "https://github.com/LVM-IT/lvo/tree/1.0.2/logging"
   },
   "author": {
     "name": "LVM"
