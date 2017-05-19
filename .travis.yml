@@ -29,10 +29,10 @@ before_script:
 #- cd $PACKAGE
 - npm install -g codecov
 - npm install
-- webdriver-manager update
 - ng lint
 - npm run build
 - ng test --watch=false --code-coverage
+- npm run pree2e
 - ng e2e --watch=false
 script:
 - codecov

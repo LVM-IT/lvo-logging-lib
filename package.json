@@ -16,6 +16,7 @@
     "testCodeCoverage": "ng test --code-coverage",
     "testCodeCoverageSingleRun": "ng test --code-coverage --single-run",
     "lint": "ng lint",
+    "pree2e":"webdriver-manager update --standalone --ignore_ssl",
     "e2e": "ng e2e"
   },
   "private": true,
