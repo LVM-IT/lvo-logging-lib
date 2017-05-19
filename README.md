@@ -1,9 +1,12 @@
 # @lvo/logging
 
 [![npm version](https://badge.fury.io/js/%40lvo%2Flogging.svg)](https://badge.fury.io/js/%40lvo%2Flogging)
-[![Build Status](https://travis-ci.org/LVM-IT/lvo-logging-lib.svg?branch=master)](https://travis-ci.org/LVM-IT/lvo)
-[![codecov](https://codecov.io/gh/LVM-IT/lvo-logging-lib/branch/master/graph/badge.svg)](https://codecov.io/gh/LVM-IT/lvo)
-[![Known Vulnerabilities](https://snyk.io/test/github/lvm-it/lvo-logging-lib/badge.svg?targetFile=logging%2Fpackage.json)](https://snyk.io/test/github/lvm-it/lvo?targetFile=logging%2Fpackage.json)
+[![Build Status](https://travis-ci.org/LVM-IT/lvo-logging-lib.svg?branch=master)](https://travis-ci.org/LVM-IT/lvo-logging-lib)
+[![codecov](https://codecov.io/gh/LVM-IT/lvo-logging-lib/branch/master/graph/badge.svg)](https://codecov.io/gh/LVM-IT/lvo-logging-lib)
+[![Known Vulnerabilities](https://snyk.io/test/github/lvm-it/lvo-logging-lib/badge.svg?targetFile=logging%2Fpackage.json)](https://snyk.io/test/github/lvm-it/lvo-logging-lib?targetFile=logging%2Fpackage.json)
+[![Dependency Status][david-badge]][david-badge-url]
+[![devDependency Status][david-dev-badge]][david-dev-badge-url]
+
 
 ## Usage
 
@@ -89,3 +92,9 @@ Run `ng test --code-coverage --single-run` to create a test coverage Report
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
+
+
+
+
+[david-dev-badge]: https://david-dm.org/lvm-it/lvo-logging-lib/dev-status.svg
+[david-dev-badge-url]: https://david-dm.org/lvm-it/lvo-logging-lib?type=dev
