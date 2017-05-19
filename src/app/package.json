@@ -3,7 +3,7 @@
   "version": "1.0.2",
   "repository": {
     "type": "git",
-    "url": "https://github.com/LVM-IT/lvo/tree/1.0.2/logging"
+    "url": "https://github.com/LVM-IT/lvo-logging-lib/tree/1.0.2/logging"
   },
   "author": {
     "name": "LVM"
@@ -13,7 +13,7 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/LVM-IT/lvo/issues"
+    "url": "https://github.com/LVM-IT/lvo-logging-lib/issues"
   },
   "module": "lvo-logging.js",
   "typings": "lvo-logging.d.ts",
