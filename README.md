@@ -1,9 +1,9 @@
 # @lvo/logging
 
 [![npm version](https://badge.fury.io/js/%40lvo%2Flogging.svg)](https://badge.fury.io/js/%40lvo%2Flogging)
-[![Build Status](https://travis-ci.org/LVM-IT/lvo.svg?branch=master)](https://travis-ci.org/LVM-IT/lvo)
-[![codecov](https://codecov.io/gh/LVM-IT/lvo/branch/master/graph/badge.svg)](https://codecov.io/gh/LVM-IT/lvo)
-[![Known Vulnerabilities](https://snyk.io/test/github/lvm-it/lvo/badge.svg?targetFile=logging%2Fpackage.json)](https://snyk.io/test/github/lvm-it/lvo?targetFile=logging%2Fpackage.json)
+[![Build Status](https://travis-ci.org/LVM-IT/lvo-logging-lib.svg?branch=master)](https://travis-ci.org/LVM-IT/lvo)
+[![codecov](https://codecov.io/gh/LVM-IT/lvo-logging-lib/branch/master/graph/badge.svg)](https://codecov.io/gh/LVM-IT/lvo)
+[![Known Vulnerabilities](https://snyk.io/test/github/lvm-it/lvo-logging-lib/badge.svg?targetFile=logging%2Fpackage.json)](https://snyk.io/test/github/lvm-it/lvo?targetFile=logging%2Fpackage.json)
 
 ## Usage
 
