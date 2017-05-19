@@ -1,13 +1,16 @@
 /**
  * enum of the supported LogLevel
+ *
+ * Please do not use DONOTUSE: it's just a workaround for the TS2678 Compile Message Problem
  */
-export const enum LogLevel {
+export enum LogLevel {
   // Level goes from very verbose to quiet
-  Verbose = 0,
-  Debug = 1,
-  Info = 2,
-  Warning = 3,
-  Error = 4,
-  Critical = 5,
-  Quiet = 6,
+  DONOTUSE,
+  Verbose,
+  Debug,
+  Info,
+  Warning,
+  Error,
+  Critical,
+  Quiet,
 }

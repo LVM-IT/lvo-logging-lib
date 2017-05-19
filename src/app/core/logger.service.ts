@@ -79,23 +79,27 @@ export class Logger {
         let color = 'gray';
         if (logLevel) {
             switch (logLevel) {
-                case LogLevel.Critical:
-                    color = '#FF4000';
-                    break;
-                case LogLevel.Verbose:
-                    color = '#FA58F4';
-                    break;
+
                 case LogLevel.Debug:
                     color = 'blue';
                     break;
                 case LogLevel.Info:
                     color = 'darkgreen';
                     break;
+
+                case LogLevel.Critical:
+                    color = '#FF4000';
+                    break;
+
                 case LogLevel.Warning:
                     color = 'orange';
                     break;
                 case LogLevel.Error:
                     color = 'red';
+                    break;
+
+                case LogLevel.Verbose:
+                    color = '#FA58F4';
                     break;
                 default:
                     return 'gray';
