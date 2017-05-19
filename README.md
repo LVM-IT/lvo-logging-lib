@@ -95,6 +95,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 
 
-
+[david-badge]: https://david-dm.org/lvm-it/lvo-logging-lib.svg
+[david-badge-url]: https://david-dm.org/lvm-it/lvo-logging-lib
 [david-dev-badge]: https://david-dm.org/lvm-it/lvo-logging-lib/dev-status.svg
 [david-dev-badge-url]: https://david-dm.org/lvm-it/lvo-logging-lib?type=dev
