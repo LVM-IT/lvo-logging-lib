@@ -16,14 +16,9 @@
  
 >     npm install @lvo/logging --save-dev 
 
-or add to package.json
->     "dependencies": {    
->         "@lvo/logging": "1.0.0"
->      }
-
 #### Module Import
 
-```javascript
+```typescript
      import { LoggingModule } from '@lvo/logging';
 
      @NgModule({  
@@ -60,13 +55,13 @@ or add to package.json
      set log level      :  log.logmanager.setCurrentLogLevel(4, ['c1','c2'])
 
      export enum LogLevel {
-        Nothing, // 0
         Verbose, // 1
         Debug,   // 2
         Info,    // 3
         Warning, // 4
         Error,   // 5
         Critical // 6
+        Quiet    // 7
      }
 
 
@@ -79,7 +74,7 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 
 ## Build
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
+Run `npm run build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
 ## Running unit tests
 
