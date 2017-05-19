@@ -1,0 +1,918 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>logging</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	    <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">logging</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+                <input type="text" placeholder="Type to search">
+            </div>
+            <nav>
+            
+                <ul class="list">
+            
+                    <li class="title">
+                        <a href="../index.html">logging</a>
+                    </li>
+            
+                    <li class="divider"></li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                        <ul class="links">
+                                <li class="link">
+                                    <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                </li>
+                                <li class="link">
+                                    <a 
+                                        
+                                         href="../overview.html" 
+                                         href="../overview.html" 
+                                        >
+                                        <span class="fa fa-th"></span>Overview
+                                    </a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../modules.html" >
+                            <span class="fa fa-archive"></span>
+                            <span>Modules</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-modules-links"
+                            ></span>
+                        </a>
+                        <ul class="links collapse in"
+                                id="xs-modules-links"
+                            >
+                                <li class="link">
+                                    <a href="../modules/LoggingModule.html" >LoggingModule</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../modules/LogviewAppModule.html" >LogviewAppModule</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-cogs"></span>
+                            <span>Components</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-components-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-components-links"
+                            >
+                                <li class="link">
+                                    <a href="../components/LogviewComponent.html" >LogviewComponent</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-file-code-o"></span>
+                            <span>Classes</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-classes-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-classes-links"
+                            >
+                                <li class="link">
+                                    <a href="../classes/Logger.html" >Logger</a>
+                                </li>
+                                <li class="link">
+                                    <a href="../classes/LvmLoggingPage.html" >LvmLoggingPage</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+                    <li class="chapter">
+                        <div class="simple">
+                            <span class="fa fa-long-arrow-down"></span>
+                            <span>Injectables</span>
+                            <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                    data-target="#xs-injectables-links"
+                                ></span>
+                        </div>
+                        <ul class="links collapse in"
+                                id="xs-injectables-links"
+                            >
+                                <li class="link">
+                                    <a href="../injectables/LogManager.html"  data-type="entity-link" class="active" >LogManager</a>
+                                </li>
+                        </ul>
+                    </li>
+            
+            
+            
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                    </li>
+            
+                    <li class="chapter">
+                        <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                    </li>
+            
+            
+                </ul>
+            
+            </nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+                   
+                       <ul class="list">
+                   
+                           <li class="title">
+                               <a href="../index.html">logging</a>
+                           </li>
+                   
+                           <li class="divider"></li>
+                   
+                               <div id="book-search-input" role="search">
+                                   <input type="text" placeholder="Type to search">
+                               </div>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../index.html"><span class="fa fa-home"></span>Getting started</a>
+                               <ul class="links">
+                                       <li class="link">
+                                           <a href="../index.html" ><span class="fa fa-file-text-o"></span>README</a>
+                                       </li>
+                                       <li class="link">
+                                           <a 
+                                               
+                                                href="../overview.html" 
+                                                href="../overview.html" 
+                                               >
+                                               <span class="fa fa-th"></span>Overview
+                                           </a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../modules.html" >
+                                   <span class="fa fa-archive"></span>
+                                   <span>Modules</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#modules-links"
+                                   ></span>
+                               </a>
+                               <ul class="links collapse in"
+                                       id="modules-links"
+                   >
+                                       <li class="link">
+                                           <a href="../modules/LoggingModule.html" >LoggingModule</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../modules/LogviewAppModule.html" >LogviewAppModule</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-cogs"></span>
+                                   <span>Components</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#components-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="components-links"
+                   >
+                                       <li class="link">
+                                           <a href="../components/LogviewComponent.html" >LogviewComponent</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-file-code-o"></span>
+                                   <span>Classes</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#classes-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="classes-links"
+                   >
+                                       <li class="link">
+                                           <a href="../classes/Logger.html" >Logger</a>
+                                       </li>
+                                       <li class="link">
+                                           <a href="../classes/LvmLoggingPage.html" >LvmLoggingPage</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                           <li class="chapter">
+                               <div class="simple">
+                                   <span class="fa fa-long-arrow-down"></span>
+                                   <span>Injectables</span>
+                                   <span class="menu-toggler fa fa-angle-up" data-toggle="collapse"
+                                           data-target="#injectables-links"
+                   ></span>
+                               </div>
+                               <ul class="links collapse in"
+                                       id="injectables-links"
+                   >
+                                       <li class="link">
+                                           <a href="../injectables/LogManager.html"  data-type="entity-link" class="active" >LogManager</a>
+                                       </li>
+                               </ul>
+                           </li>
+                   
+                   
+                   
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../miscellaneous.html" ><span class="fa fa-cubes"></span>Miscellaneous</a>
+                           </li>
+                   
+                           <li class="chapter">
+                               <a data-type="chapter-link" href="../coverage.html" ><span class="fa fa-tasks"></span>Documentation coverage</a>
+                           </li>
+                   
+                   
+                       </ul>
+                   
+                   </nav>
+               </div>
+               <div class="content injectable">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Injectables</li>
+  <li>LogManager</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+    <li class="active">
+        <a href="#infos" id="infos-tab" role="tab" data-toggle="tab">Infos</a>
+    </li>
+    <li>
+        <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+    </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="infos">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/core/log-manager.service.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>LogManager is the Factory for creation Logger for a certain context<br/>usage:<br/>      inject the logManager via constructor<br/>      this.log = logManager.getLogger(this, &#39;#4863A0&#39;);</p><br/>
+            </p>
+
+            <section>
+                <h3 id="constructor">Constructor</h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <code>constructor(_ngZone: <a href="https://angular.io/docs/ts/latest/api/core/index/NgZone-class.html" target="_blank">NgZone</a>)</code>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/core/log-manager.service.ts:17</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>set _ngZone to enable access from the Browser Console</p><br/><p>access logger instance with &#39;log.service&#39;<br/>access logger-registry instance with with &#39;log.map&#39;</p><br/></div>
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <ul class="jsdoc-params">
+                                                        <li>
+                                                            <div>
+                                                                <b>_ngZone</b>
+                                                            </div>
+                                                            <div>
+                                                                
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                
+                    <h3 id="methods">
+                        Methods
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Protected</span> isString</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play lock">
+                                            <span class="fa fa-lock"></span>
+                                        </span>
+                                    <code>isString(x: any)</code>
+                                </td>
+                            </tr>
+            
+            
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/core/log-manager.service.ts:34</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>boolean</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Static</span> getLogger</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play export">
+                                            <span class="fa fa-export"></span>
+                                        </span>
+                                    <code>getLogger(context: any, moduleColor: string)</code>
+                                </td>
+                            </tr>
+            
+            
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="44" class="link-to-prism">src/app/core/log-manager.service.ts:44</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>Factory Method, um jeder Klasse die Möglichkeit zu geben, seinen eigenen Logger zu instanziieren</p><br/></div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <ul class="jsdoc-params">
+                                                        <li>
+                                                            <div>
+                                                                <b>context</b>
+                                                            </div>
+                                                            <div>
+                                                                <ul>
+            <li>a string or an instance or a context instance</li>
+            </ul>
+            
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="../classes/Logger.html" target="_self" >Logger</a></code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Protected</span> registerLogger</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play lock">
+                                            <span class="fa fa-lock"></span>
+                                        </span>
+                                    <code>registerLogger(ls: <a href="../classes/Logger.html">Logger</a>)</code>
+                                </td>
+                            </tr>
+            
+            
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/core/log-manager.service.ts:61</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Static</span> getLoggerMap</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play export">
+                                            <span class="fa fa-export"></span>
+                                        </span>
+                                    <code>getLoggerMap(context: string[])</code>
+                                </td>
+                            </tr>
+            
+            
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="99" class="link-to-prism">src/app/core/log-manager.service.ts:99</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+                                        <div class="io-description"><p>build linked Maps according to the Context to enable LogLevel Settings and other on context and subcontext level</p><br/></div>
+            
+                                        <div class="io-description">
+                                                <b>Parameters :</b>
+                                                <ul class="jsdoc-params">
+                                                        <li>
+                                                            <div>
+                                                                <b>context</b>
+                                                            </div>
+                                                            <div>
+                                                                
+                                                            </div>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>any</code>
+            
+                                        </div>
+                                            <div class="io-description">
+                                                
+                                            </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Static</span> getLoggerByContext</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play export">
+                                            <span class="fa fa-export"></span>
+                                        </span>
+                                    <code>getLoggerByContext(context: string[])</code>
+                                </td>
+                            </tr>
+            
+            
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="115" class="link-to-prism">src/app/core/log-manager.service.ts:115</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code><a href="../classes/Logger.html" target="_self" >Logger[]</a></code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Protected</span> addLoggerFromMapToArray</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play lock">
+                                            <span class="fa fa-lock"></span>
+                                        </span>
+                                    <code>addLoggerFromMapToArray(map: any, loggerArray: <a href="../classes/Logger.html">Logger[]</a>)</code>
+                                </td>
+                            </tr>
+            
+            
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="124" class="link-to-prism">src/app/core/log-manager.service.ts:124</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Protected</span> getContext</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play lock">
+                                            <span class="fa fa-lock"></span>
+                                        </span>
+                                    <code>getContext(object: any)</code>
+                                </td>
+                            </tr>
+            
+            
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="137" class="link-to-prism">src/app/core/log-manager.service.ts:137</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>string[]</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Static</span> setCurrentLogLevel</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                        <span class="modifier-icon method fa fa-play export">
+                                            <span class="fa fa-export"></span>
+                                        </span>
+                                    <code>setCurrentLogLevel(logLevel: LogLevel, context: string[])</code>
+                                </td>
+                            </tr>
+            
+            
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/app/core/log-manager.service.ts:152</a></div>
+                                    </td>
+                                </tr>
+            
+                            <tr>
+                                <td class="col-md-4">
+            
+                                        <div class="io-description">
+                                            <b>Returns : </b>    <code>void</code>
+            
+                                        </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+            </section>
+
+            <section>
+                
+                    <h3 id="inputs">
+                        Properties
+                    </h3>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Static</span> _currentLogLevel</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-export"></span><code>_currentLogLevel:     <code>LogLevel</code>
+            </bcode>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="17" class="link-to-prism">src/app/core/log-manager.service.ts:17</a></div>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+                    <table class="table table-sm table-bordered">
+                        <tbody>
+                            <tr>
+                                <td class="col-md-4">
+                                    <b><span class="modifier">Protected</span> _loggerMap</b>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="col-md-4">
+                                    <span class="modifier-icon fa fa-lock"></span><code>_loggerMap:     <code>any</code>
+            </bcode>
+                                </td>
+                            </tr>
+                                <tr>
+                                    <td class="col-md-4">
+                                        <div class="io-line">Defined in <a href="" data-line="15" class="link-to-prism">src/app/core/log-manager.service.ts:15</a></div>
+                                    </td>
+                                </tr>
+                        </tbody>
+                    </table>
+            </section>
+    </div>
+    <div class="tab-pane fade tab-source-code" id="source">
+        <pre class="line-numbers"><code class="language-typescript">import { Injectable, NgZone } from &#x27;@angular/core&#x27;;
+import { Logger } from &#x27;./logger.service&#x27;;
+import { LogLevel } from &#x27;./log-level.enum&#x27;;
+
+/**
+ * LogManager is the Factory for creation Logger for a certain context
+ * usage:
+ *      inject the logManager via constructor
+ *      this.log &#x3D; logManager.getLogger(this, &#x27;#4863A0&#x27;);
+ *
+ */
+@Injectable()
+export class LogManager {
+
+    private _loggerMap: Map&lt;string, any&gt; &#x3D; new Map();
+
+    public _currentLogLevel: LogLevel &#x3D; LogLevel.Info;
+
+
+    /**
+     * set _ngZone to enable access from the Browser Console
+     *
+     * access logger instance with &#x27;log.service&#x27;
+     * access logger-registry instance with with &#x27;log.map&#x27;
+     *
+     * @param _ngZone
+     */
+    constructor(private _ngZone?: NgZone) {
+        if (_ngZone) {
+            window[&#x27;log&#x27;] &#x3D; {map: this._loggerMap, logmanager: this, zone: _ngZone};
+        }
+    }
+
+    private isString(x: any): x is string {
+        return typeof x &#x3D;&#x3D;&#x3D; &#x27;string&#x27;;
+    }
+
+
+    /**
+     * Factory Method, um jeder Klasse die Möglichkeit zu geben, seinen eigenen Logger zu instanziieren
+     * @param context - a string or an instance or a context instance
+     * @returns {Logger}
+     */
+    public getLogger(context: any, moduleColor?: string): Logger {
+        if (context) {
+
+            const ls: Logger &#x3D; new Logger();
+            if (this._currentLogLevel) {
+                ls.setCurrentLogLevel(this._currentLogLevel);
+            }
+            ls.setContext(this.getContext(context));
+            ls.setConsoleColor(moduleColor);
+            this.registerLogger(ls);
+
+            return ls;
+        }
+
+        throw new Error(&#x27;NoContext&#x27;);
+    }
+
+    private registerLogger(ls: Logger) {
+
+        if (ls) {
+            const context &#x3D; ls.getContext();
+            if (context &amp;&amp; context.length &gt; 0) {
+                // build linked Maps according to the Context to enable LogLevel Settings and other on context and subcontext level
+                let lastMap &#x3D; this._loggerMap;
+                for (let _i &#x3D; 0; _i &lt; context.length; _i++) {
+                    const key &#x3D; context[_i];
+                    const object &#x3D; lastMap.get(key);
+                    if (!object) {
+                        // No Logger oder Map with Logger under defined key
+                        if (_i &#x3D;&#x3D;&#x3D; context.length - 1) {
+                            // no subcontext --&gt; register Logger
+                            const root &#x3D; new Map();
+                            root.set(&#x27;root&#x27;, ls);
+                            lastMap.set(key, root);
+                        } else {
+                            // create Map for subcontext
+                            const subContextMap &#x3D; new Map();
+                            lastMap.set(key, subContextMap);
+                            // Point to new Map
+                            lastMap &#x3D; subContextMap;
+                        }
+                    } else {
+                        lastMap &#x3D; object;
+                    }
+                }
+            }
+        }
+    }
+
+    /**
+     * build linked Maps according to the Context to enable LogLevel Settings and other on context and subcontext level
+     *
+     * @param context
+     * @returns {Map&lt;string, any&gt;}
+     */
+    public getLoggerMap(context?: Array&lt;string&gt;): Map&lt;string, any&gt; {
+        if (context &amp;&amp; context.length &gt; 0) {
+            let lastMap &#x3D; this._loggerMap;
+            for (let _i &#x3D; 0; _i &lt; context.length; _i++) {
+                const key &#x3D; context[_i];
+                const object &#x3D; lastMap.get(key);
+                if (object) {
+                    lastMap &#x3D; object;
+                }
+            }
+            return lastMap;
+        }
+        return this._loggerMap;
+    }
+
+
+    public getLoggerByContext(context?: Array&lt;string&gt;): Array&lt;Logger&gt; {
+        const loggerArray &#x3D; new Array&lt;Logger&gt;();
+
+        const map: Map&lt;string, any&gt; &#x3D; this.getLoggerMap(context);
+        this.addLoggerFromMapToArray(map, loggerArray);
+
+        return loggerArray;
+    }
+
+    private addLoggerFromMapToArray(map: Map&lt;string, any&gt;, loggerArray: Array&lt;Logger&gt;) {
+        if (map) {
+            map.forEach((value: any, key: string) &#x3D;&gt; {
+                console.log(key, value);
+                if (value instanceof Logger) {
+                    loggerArray.push(value);
+                } else {
+                    this.addLoggerFromMapToArray(value, loggerArray);
+                }
+            });
+        }
+    }
+
+    private getContext(object: any): Array&lt;string&gt; {
+
+        let context: Array&lt;string&gt; &#x3D; new Array&lt;string&gt;();
+
+        if (Array.isArray(object)) {
+            context &#x3D; object;
+        } else if (this.isString(object)) {
+            context.push(object);
+        } else {
+            context.push(object.constructor.name);
+        }
+
+        return context;
+    }
+
+    public setCurrentLogLevel(logLevel: LogLevel, context?: Array&lt;string&gt;) {
+
+        this._currentLogLevel &#x3D; logLevel;
+
+        const loggerArray &#x3D; this.getLoggerByContext(context);
+        for (const logger of loggerArray) {
+            logger.setCurrentLogLevel(logLevel);
+        }
+
+    }
+
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+       <script>var COMPODOC_CURRENT_PAGE_DEPTH = 1;</script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+    </body>
+</html>
