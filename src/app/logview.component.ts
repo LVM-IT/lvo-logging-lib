@@ -9,8 +9,7 @@ import { Logger } from './core/logger.service';
     selector: 'app-root',
     template: `<h1>
                 {{title}}
-               </h1>
-               Please check your Browsers Console for logging messages !`
+               </h1>`
 })
 export class LogviewComponent implements OnInit {
 
