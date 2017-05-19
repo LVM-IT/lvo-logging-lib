@@ -14,7 +14,7 @@ describe('LogManagerService', () => {
         expect(logManager).toBeTruthy();
     }));
 
-    it(`should logmanager maintain registered logger with hierarchy 
+    it(`should logmanager maintain registered logger with hierarchy
     and switch log level on certain context level`, inject([LogManager], (logManager: LogManager) => {
 
 

@@ -32,7 +32,7 @@ before_script:
 - ng lint
 - npm run build
 - ng test --watch=false --code-coverage
-
+- ng e2e --watch=false
 script:
 - codecov
 
