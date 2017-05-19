@@ -29,7 +29,7 @@ before_script:
 #- cd $PACKAGE
 - npm install -g codecov
 - npm install
-- ./node_modules/protractor/bin/webdriver-manager update
+- webdriver-manager update
 - ng lint
 - npm run build
 - ng test --watch=false --code-coverage
