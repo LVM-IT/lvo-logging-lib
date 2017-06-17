@@ -1,6 +1,5 @@
-### Roadmap lvo-logging lib
+### Roadmap lvo-logging-lib
 
-  
 - [x] create Logging Facade
 - [x] create Logger Factory
 - [x] change LogLevel from the Browser Console
