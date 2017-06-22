@@ -1,7 +1,7 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "project": {
-    "version": "1.0.2",
+    "version": "1.0.3",
     "name": "@lvo/logging"
   },
   "apps": [
@@ -10,7 +10,9 @@
       "outDir": "dist",
       "assets": [
         "assets",
-        "favicon.ico"
+        "favicon.ico",
+        "favicon-16x16.png",
+        "favicon-32x32.png"
       ],
       "index": "index.html",
       "main": "main.ts",
