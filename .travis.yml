@@ -3,7 +3,7 @@ dist: trusty
 group: edge
 language: node_js
 node_js:
-  - "6.10"
+  - "8.1"
 
 #before_install:
 #  - export CHROME_BIN=chromium-browser
