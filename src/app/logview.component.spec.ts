@@ -2,8 +2,8 @@
 
 import { TestBed, async } from '@angular/core/testing';
 import { LogviewComponent } from './logview.component';
-import { environment } from '../environments/environment';
 import { LoggingModule } from './core/logging.module';
+import { FormsModule } from '@angular/forms';
 
 describe('AppComponent', () => {
   beforeEach(() => {
@@ -12,7 +12,7 @@ describe('AppComponent', () => {
         LogviewComponent
       ],
       imports: [
-          LoggingModule
+          LoggingModule, FormsModule
       ]
     });
     TestBed.compileComponents();
@@ -28,8 +28,6 @@ describe('AppComponent', () => {
     expect(app.log).toBeTruthy();
     // Test Classname Injection
     expect(app.log._context).toContain('LogviewComponent');
-
-    app.log.info('Jenkins env ? ' + environment.production);
 
     app.ngOnInit();
   }));
