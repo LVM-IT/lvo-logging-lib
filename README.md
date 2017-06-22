@@ -1,7 +1,5 @@
 # @lvo/logging
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/LVM-IT/lvo-logging-lib.svg)](https://greenkeeper.io/)
-
 [![npm version](https://badge.fury.io/js/%40lvo%2Flogging.svg)](https://badge.fury.io/js/%40lvo%2Flogging)
 [![Build Status](https://travis-ci.org/LVM-IT/lvo-logging-lib.svg?branch=master)](https://travis-ci.org/LVM-IT/lvo-logging-lib)
 [![codecov](https://codecov.io/gh/LVM-IT/lvo-logging-lib/branch/master/graph/badge.svg)](https://codecov.io/gh/LVM-IT/lvo-logging-lib)
