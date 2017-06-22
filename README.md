@@ -1,10 +1,11 @@
 # @lvo/logging
 
-[![Greenkeeper badge](https://badges.greenkeeper.io/LVM-IT/lvo-logging-lib.svg)](https://greenkeeper.io/)
 
 [![npm version](https://badge.fury.io/js/%40lvo%2Flogging.svg)](https://badge.fury.io/js/%40lvo%2Flogging)
 [![Build Status](https://travis-ci.org/LVM-IT/lvo-logging-lib.svg?branch=master)](https://travis-ci.org/LVM-IT/lvo-logging-lib)
+[![Heroku](https://heroku-badge.herokuapp.com/?app=lvo-logging)]
 [![codecov](https://codecov.io/gh/LVM-IT/lvo-logging-lib/branch/master/graph/badge.svg)](https://codecov.io/gh/LVM-IT/lvo-logging-lib)
+[![Greenkeeper badge](https://badges.greenkeeper.io/LVM-IT/lvo-logging-lib.svg)](https://greenkeeper.io/)
 [![Known Vulnerabilities](https://snyk.io/test/github/lvm-it/lvo-logging-lib/badge.svg?targetFile=logging%2Fpackage.json)](https://snyk.io/test/github/lvm-it/lvo-logging-lib?targetFile=logging%2Fpackage.json)
 [![Dependency Status][david-badge]][david-badge-url]
 [![devDependency Status][david-dev-badge]][david-dev-badge-url]
