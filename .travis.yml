@@ -38,7 +38,14 @@ before_script:
 script:
 - codecov
 
+deploy:
+  provider: heroku
+  api_key: 51bb6400-f669-4663-8fb4-121f720efef1
+  app: lvo-logging
+
 notifications:
   email:
     on_failure: di.lammers@lvm.de
     on_success: di.lammers@lvm.de
+
+
