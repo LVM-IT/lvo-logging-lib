@@ -41,7 +41,7 @@
     "@compodoc/compodoc": "^1.0.0-beta.9",
     "@types/jasmine": "2.5.45",
     "@types/node": "^8.0.1",
-    "codelyzer": "~3.0.1",
+    "codelyzer": "~3.1.2",
     "del": "^3.0.0",
     "gulp": "^3.9.1",
     "gulp-rollup": "^2.11.0",
