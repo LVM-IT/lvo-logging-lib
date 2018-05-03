@@ -61,7 +61,7 @@
     "typescript": "~2.3.3"
   },
   "engines": {
-    "node": "8.1.2",
+    "node": "10",
     "npm": "5.0.3"
   }
 }
