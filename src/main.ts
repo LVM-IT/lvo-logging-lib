@@ -1,15 +1,12 @@
-import './polyfills.ts';
-
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { enableProdMode } from '@angular/core';
+import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+
+import { AppModule } from './app/app.module';
 import { environment } from './environments/environment';
-import { LogviewAppModule } from './app/logview.module';
-
-
 
 if (environment.production) {
   enableProdMode();
 }
 
-
-platformBrowserDynamic().bootstrapModule(LogviewAppModule);
+platformBrowserDynamic().bootstrapModule(AppModule)
+    .catch(err => console.log(err));
