@@ -6,7 +6,7 @@
 [![Heroku](https://heroku-badge.herokuapp.com/?app=lvo-logging)](https://lvo-logging.herokuapp.com/)
 [![codecov](https://codecov.io/gh/LVM-IT/lvo-logging-lib/branch/master/graph/badge.svg)](https://codecov.io/gh/LVM-IT/lvo-logging-lib)
 [![Greenkeeper badge](https://badges.greenkeeper.io/LVM-IT/lvo-logging-lib.svg)](https://greenkeeper.io/)
-[![Known Vulnerabilities](https://snyk.io/test/github/lvm-it/lvo-logging-lib/badge.svg?targetFile=logging%2Fpackage.json)](https://snyk.io/test/github/lvm-it/lvo-logging-lib?targetFile=logging%2Fpackage.json)
+[![Known Vulnerabilities](https://snyk.io/test/github/lvm-it/lvo-logging-lib/badge.svg?targetFile=package.json)](https://snyk.io/test/github/lvm-it/lvo-logging-lib?targetFile=package.json)
 [![Dependency Status][david-badge]][david-badge-url]
 [![devDependency Status][david-dev-badge]][david-dev-badge-url]
 
