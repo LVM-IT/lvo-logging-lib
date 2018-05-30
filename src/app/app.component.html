@@ -1,0 +1,17 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+    <h1>
+        Welcome to {{ title }}!
+    </h1>
+</div>
+
+
+<input type="text" [(ngModel)]="msg"/>
+
+<button id="btnVerbose" (click)="logVerbose()">log Verbose</button>
+<button id="btnDebug" (click)="logDebug()">log Debug</button>
+<button id="btnInfo" (click)="logInfo()">log Info</button>
+<button id="btnWarn" (click)="logWarn()">log Warn</button>
+<button id="btnError" (click)="logError()">log Error</button>
+<button id="btnCritical" (click)="logCritical()">logCritical</button>
+<button id="btnThrowError" (click)="throwError()">throw Error</button>
