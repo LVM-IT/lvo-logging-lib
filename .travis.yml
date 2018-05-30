@@ -32,6 +32,7 @@ before_script:
 - npm install -g codecov
 - npm install
 - ng lint
+- package
 - npm run build
 - ng test --watch=false --code-coverage
 - npm run e2e --watch=false
