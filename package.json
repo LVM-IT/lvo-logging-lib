@@ -8,7 +8,7 @@
     "build:lib": "ng build --prod @lvo/logging",
     "npm:pack": "cd dist/lvo/logging && npm pack",
     "package": "npm run build:lib && npm run npm:pack",
-    "test": "ng test",
+    "test:coverage": "ng test @lvo/logging --watch=false --code-coverage",
     "lint": "ng lint",
     "e2e": "ng e2e"
   },
