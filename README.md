@@ -96,7 +96,7 @@ Before running the tests make sure you are serving the app via `ng serve`.
 
 The MIT License (MIT)
 
-[Licensed By Tossca:](/www.tossca.org/)
+[Licensed By Tossca:](www.tossca.org/)
 
 ![alt text](https://raw.githubusercontent.com/LVM-IT/lvo-logging-lib/master/licensedByTossca.png "Logo Title Text 1")
 
