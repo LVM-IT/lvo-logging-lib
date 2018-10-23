@@ -3,7 +3,7 @@
   "version": "7.0.0",
   "scripts": {
     "ng": "ng",
-    "start": "npm run build:lib && ng serve",
+    "start": "ng serve",
     "build": "ng build",
     "build:lib": "ng build --prod @lvo/logging",
     "npm:pack": "cd dist/lvo/logging && npm pack",
@@ -16,13 +16,6 @@
   "dependencies": {
     "@angular/common": "^7.0.0",
     "@angular/core": "^7.0.0",
-    "@angular/cli": "~7.0.2",
-    "@angular/compiler": "^7.0.0",
-    "@angular/compiler-cli": "^7.0.0",
-    "@angular-devkit/build-angular": "~0.10.0",
-    "@angular-devkit/build-ng-packagr": "~0.10.0",
-    "tsickle": ">=0.29.0",
-    "ng-packagr": "^4.2.0",
     "@angular/animations": "^7.0.0",
     "@angular/forms": "^7.0.0",
     "@angular/http": "^7.0.0",
@@ -34,6 +27,13 @@
     "zone.js": "^0.8.26"
   },
   "devDependencies": {
+    "@angular/cli": "~7.0.2",
+    "@angular/compiler": "^7.0.0",
+    "@angular/compiler-cli": "^7.0.0",
+    "@angular-devkit/build-angular": "~0.10.0",
+    "@angular-devkit/build-ng-packagr": "~0.10.0",
+    "tsickle": ">=0.29.0",
+    "ng-packagr": "^4.2.0",
     "tslib": "^1.9.0",
     "typescript": "~3.1.1",
     "@angular/language-service": "^7.0.0",
@@ -51,5 +51,9 @@
     "protractor": "~5.4.0",
     "ts-node": "~7.0.0",
     "tslint": "~5.11.0"
+  },
+  "engines": {
+    "node": "8.11.2",
+    "npm": "6.2.0"
   }
 }
