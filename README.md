@@ -1,6 +1,6 @@
 # @lvo/logging
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 6.0.5.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.2.
 
 [![npm version](https://badge.fury.io/js/%40lvo%2Flogging.svg)](https://badge.fury.io/js/%40lvo%2Flogging)
 [![Build Status](https://travis-ci.org/LVM-IT/lvo-logging-lib.svg?branch=master)](https://travis-ci.org/LVM-IT/lvo-logging-lib)
@@ -92,7 +92,13 @@ Run `ng test @lvo/logging --watch=false --code-coverage` to create a test covera
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 Before running the tests make sure you are serving the app via `ng serve`.
 
+# License
 
+The MIT License (MIT)
+
+[Licensed By Tossca:](/www.tossca.org/)
+
+![alt text](https://raw.githubusercontent.com/LVM-IT/lvo-logging-lib/master/licensedByTossca.png "Logo Title Text 1")
 
 [david-badge]: https://david-dm.org/lvm-it/lvo-logging-lib.svg
 [david-badge-url]: https://david-dm.org/lvm-it/lvo-logging-lib

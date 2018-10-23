@@ -1,6 +1,8 @@
 The MIT License (MIT)
 
-Copyright (c) 2018 LVM Versicherung
+[Licensed By Tossca:](/www.tossca.org/)
+
+![alt text](https://raw.githubusercontent.com/LVM-IT/lvo-logging-lib/master/licensedByTossca.png "Logo Title Text 1")
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
