@@ -18,6 +18,8 @@ before_install:
   - sudo apt-get install -y libappindicator1 fonts-liberation
   - wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
   - sudo dpkg -i google-chrome*.deb
+  - npm install -g @angular/cli
+  - ng analytics off
 
 env:
   - PACKAGE=logging
@@ -30,8 +32,6 @@ branches:
 before_script:
   #- cd $PACKAGE
   - npm install -g codecov
-  - npm install -g @angular/cli
-  - ng analytics off
   - npm install
   - ng lint
   - npm run package
