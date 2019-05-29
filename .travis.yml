@@ -31,6 +31,7 @@ before_script:
 #- cd $PACKAGE
 - npm install -g codecov
 - npm install
+- ng analytics off
 - ng lint
 - npm run package
 - npm run test:coverage
