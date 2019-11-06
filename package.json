@@ -46,7 +46,7 @@
     "typescript": "~3.4.3",
     "@angular-devkit/build-ng-packagr": "^0.800.0",
     "ng-packagr": "^5.2.0",
-    "tsickle": "^0.35.0"
+    "tsickle": "^0.37.1"
   },
   "engines": {
     "node": "10.15.3",
