@@ -7,3 +7,4 @@ tmp/
 build/
 e2e/lib
 google-chrome-stable_current_amd64.deb
+/lvo-logging-lib.iml
