@@ -44,7 +44,7 @@
     "ts-node": "~7.0.0",
     "tslint": "~5.15.0",
     "typescript": "~3.5.3",
-    "@angular-devkit/build-ng-packagr": "^0.803.20",
+    "@angular-devkit/build-ng-packagr": "^0.803.22",
     "ng-packagr": "^5.7.1",
     "tsickle": "^0.35.0"
   },
